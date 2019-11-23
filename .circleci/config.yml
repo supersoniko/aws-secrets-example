@@ -3,8 +3,7 @@
 # Check https://circleci.com/docs/2.0/language-javascript/ for more details
 #
 version: 2.1
-orbs:
-  aws-assume-role: holdaraffle/aws-assume-role@0.0.10
+
 jobs:
   build:
     docker:
