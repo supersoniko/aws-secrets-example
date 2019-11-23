@@ -1,0 +1,31 @@
+{
+  "name": "aws-secrets-example",
+  "version": "1.0.0",
+  "description": "",
+  "scripts": {
+    "start": "sls offline",
+    "download-secrets": "aws-secrets-dotenv createLocalEnvironment prod"
+  },
+  "engines": {
+    "node": "10.16.0"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/supersoniko/aws-secrets-example.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/supersoniko/aws-secrets-example/issues"
+  },
+  "homepage": "https://github.com/supersoniko/aws-secrets-example#readme",
+  "dependencies": {
+    "aws-serverless-express": "^3.3.6",
+    "dotenv": "^8.2.0",
+    "express": "^4.17.1"
+  },
+  "devDependencies": {
+    "aws-secrets-dotenv": "^0.2.2",
+    "serverless-offline": "^5.12.0"
+  }
+}
