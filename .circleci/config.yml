@@ -16,6 +16,8 @@ jobs:
       # - image: circleci/mongo:3.4.4
 
     working_directory: ~/repo
+    environment:
+      AWS_DEFAULT_REGION: eu-west-1
 
     steps:
       - checkout
@@ -33,4 +35,8 @@ jobs:
           paths:
             - node_modules
           key: v1-dependencies-{{ checksum "package.json" }}
+
+      - run:
+          name: Retrieve environment variables from the AWS Secret manager
+          command: 'npm run retrieve-secrets'
 

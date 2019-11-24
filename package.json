@@ -4,7 +4,7 @@
   "description": "",
   "scripts": {
     "start": "sls offline",
-    "download-secrets": "aws-secrets-dotenv createLocalEnvironment prod"
+    "retrieve-secrets": "aws-secrets-dotenv createLocalEnvironment prod"
   },
   "engines": {
     "node": "10.16.0"
