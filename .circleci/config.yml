@@ -39,4 +39,6 @@ jobs:
       - run:
           name: Retrieve environment variables from the AWS Secret manager
           command: 'npm run retrieve-secrets'
-
+      - run:
+          name: Deploy to AWS
+          command: 'npm run deploy'
