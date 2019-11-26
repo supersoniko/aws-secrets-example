@@ -5,6 +5,7 @@
   "scripts": {
     "start": "sls offline",
     "retrieve-secrets": "aws-secrets-dotenv createLocalEnvironment prod",
+    "upload-secrets": "aws-secrets-dotenv createOrUpdateSecret prod",
     "deploy": "sls deploy"
   },
   "engines": {
