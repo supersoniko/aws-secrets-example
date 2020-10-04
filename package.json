@@ -27,8 +27,8 @@
     "express": "^4.17.1"
   },
   "devDependencies": {
-    "aws-secrets-dotenv": "^0.2.3",
-    "serverless": "^1.58.0",
+    "aws-secrets-dotenv": "^1.0.0",
+    "serverless": "^2.4.0",
     "serverless-offline": "^5.12.0"
   }
 }
